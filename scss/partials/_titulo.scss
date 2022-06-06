@@ -1,0 +1,27 @@
+@import "../variables/variables";
+
+.titulo{
+    @include fuente;
+    text-align: $center;
+    font-size: 60px;
+    margin-top: 70px;
+}
+
+.animacion {
+    text-align: $center;
+    color: $negro;
+    animation-name: animacion;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+@keyframes animacion{
+    0%{
+        color: $blanco;
+        font-size: 40px;
+    }
+    10%{
+        background-image: linear-gradient(to top, black)
+    }
+}

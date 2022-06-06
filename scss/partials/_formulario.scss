@@ -1,0 +1,45 @@
+@import "../variables/variables";
+
+.formulario {
+    font-family: monospace;
+    width: 450px;
+    margin: auto;
+    background: $fondo;
+    padding: 10px 20px;
+    margin-top: 60px;
+    border-radius: 7px;
+}
+
+h2 {
+    text-align: $center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+width: 100%;
+margin-bottom: 20px;
+padding: 7px;
+box-sizing: border-box;
+font-size: 17px;
+border: none;
+}
+
+textarea {
+min-height: 100px;
+max-height: 200px;
+max-width: 100%;
+}
+
+#botton {
+    background-color: #31384a;
+    color: $blanco;
+    padding: 20px;
+}
+
+@media (max-width:480px) {
+    .formulario{
+        width: 100%;
+    }
+}

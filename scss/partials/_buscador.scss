@@ -1,0 +1,17 @@
+@import "../variables/variables";
+
+.buscador {
+    position: relative;
+    padding: 20px;
+}
+
+.buscador input{
+    width: 240px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: $negro;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+}

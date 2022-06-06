@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "variables/variables";
+@import "sass2/extend";
+@import "sass2/mixins";
+@import "partials/body";
+@import "partials/main-home";
+@import "partials/titulo";
+@import "partials/buscador";
+@import "partials/parrafo";
+@import "partials/formulario";
+@import "partials/lista";
+@import "partials/footer";
+
+
+.nav-link:hover {
+    font-size: large;
+}
+
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.grid-item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.2);
+}
+
+.grid-container {
+    @include fuente;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(240px, auto);
+    gap: 15px;
+    padding: 10px;
+    grid-auto-flow: dense;
+}
+
+
+
+
+
+
